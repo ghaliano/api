@@ -125,6 +125,7 @@
       <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/docker/dev-tls/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/docker/dev-tls/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo1/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/.browserslistrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo1/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/.gitignore" afterDir="false" />
@@ -415,17 +416,17 @@
       <workItem from="1625337059245" duration="872000" />
       <workItem from="1625388189415" duration="2965000" />
       <workItem from="1625395315923" duration="10887000" />
-      <workItem from="1625427995220" duration="10962000" />
+      <workItem from="1625427995220" duration="11700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25686000" />
+    <option name="totallyTimeSpent" value="26424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28594506" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28594506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -438,9 +439,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" weight="0.329927" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" weight="0.40936556" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" visible="true" weight="0.40936556" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.36934307" />
-      <window_info anchor="bottom" id="Database Console" order="12" visible="true" weight="0.10725076" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.43202418" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
