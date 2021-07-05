@@ -125,6 +125,9 @@
       <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/docker/dev-tls/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/docker/dev-tls/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo1/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/.browserslistrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo1/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/.gitignore" afterDir="false" />
@@ -156,6 +159,18 @@
       <change beforePath="$PROJECT_DIR$/demo/demo1/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo1/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/tsconfig.spec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo1/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo2/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo2/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo2/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo2/detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo2/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo2/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiPlatform/Filter/GeolocalizedFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Place.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Topic.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PlaceRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TopicRepository.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +212,17 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -208,7 +233,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/demo/demo1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -217,7 +242,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/56adbb53-fd44-42d9-b3f4-0a45798b14db/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/Entity/Topic.php" />
-        <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
         <option value="e7179499-b484-4713-9c25-24fd3551e70d/schema/places/table/place_topic.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e7179499-b484-4713-9c25-24fd3551e70d/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8ffdaa83-a810-45b7-b701-dca7f30e8aa3/console.sql" />
@@ -234,13 +258,14 @@
         <option value="$PROJECT_DIR$/demo/demo1/src/app/api-platform-part2/api-platform-part2.component.ts" />
         <option value="$PROJECT_DIR$/src/ApiPlatform/Filter/GeolocalizedFilter.php" />
         <option value="$PROJECT_DIR$/src/Entity/Place.php" />
-        <option value="$PROJECT_DIR$/config/packages/api_platform.yaml" />
         <option value="$PROJECT_DIR$/demo/demo2/index.php" />
         <option value="$PROJECT_DIR$/demo/demo2/create.php" />
         <option value="$PROJECT_DIR$/demo/demo2/.gitignore" />
         <option value="$PROJECT_DIR$/place.sql" />
         <option value="1e83bc62-13a0-4c16-aeae-b143d100d160/schema/places/table/place.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1e83bc62-13a0-4c16-aeae-b143d100d160/console_1.sql" />
+        <option value="$PROJECT_DIR$/config/packages/api_platform.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
       </list>
     </option>
   </component>
@@ -366,6 +391,11 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -376,7 +406,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -420,7 +450,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25686000" />
+    <option name="totallyTimeSpent" value="25833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -451,9 +481,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb39a93c-841b-45ab-9973-a309f728bf63/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e228626-3eb8-47f4-9f7f-6fc3426f89c9/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -708,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/api_platform.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Place.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -787,6 +807,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/api_platform.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
         </state>
       </provider>
     </entry>
