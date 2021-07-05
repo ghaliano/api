@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="48ca7ba2-dbd5-4793-b56c-5e4470c34a63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/DataFixtures/PlaceFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/DataProvider/PlaceDataProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Entity/Message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/.github/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/.github/workflows/ci-cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/.github/workflows/ci-cd.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/docker/nginx/conf.d/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/docker/nginx/conf.d/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/admin/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/admin/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/.php_cs.dist" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/.php_cs.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/cache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/cache.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/dev/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/dev/routing.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/dev/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/dev/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/mercure.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/mercure.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/nelmio_cors.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/nelmio_cors.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/prod/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/prod/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/prod/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/prod/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/prod/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/prod/routing.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/routing.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/routing.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/validator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/validator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/test/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/validator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/packages/validator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/annotations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/dev/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/dev/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/dev/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/dev/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/dev/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/routes/dev/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/docker/nginx/conf.d/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/docker/nginx/conf.d/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/docker/php/conf.d/api-platform.dev.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/docker/php/conf.d/api-platform.dev.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/docker/php/conf.d/api-platform.prod.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/docker/php/conf.d/api-platform.prod.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/docker/varnish/conf/default.vcl" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/docker/varnish/conf/default.vcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/.helmignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/.helmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/Chart.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/Chart.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/NOTES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/NOTES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/_helpers.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/_helpers.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/configmap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/configmap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/ingress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/nginx-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/nginx-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/nginx-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/nginx-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/php-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/php-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/php-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/php-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/secrets.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/secrets.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/serviceaccount.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/serviceaccount.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/tests/test-connection.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/tests/test-connection.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/varnish-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/varnish-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/varnish-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/templates/varnish-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/helm/api/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Controller/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Entity/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Entity/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Entity/Greeting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Migrations/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Migrations/Version20190819120152.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Migrations/Version20190819120152.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Repository/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/src/Repository/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/api/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/api/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/docker/nginx/conf.d/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/docker/nginx/conf.d/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/Welcome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/Welcome.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/Welcome.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/config/entrypoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/config/entrypoint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/src/welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/docker/dev-tls/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/docker/dev-tls/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/e2e/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/e2e/src/app.po.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/e2e/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/assets/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo1/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo1/tslint.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="places@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="places@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="places@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="places: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>string</find>
+      <find>st.</find>
+      <find>distance</find>
+      <find>node</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/demo/demo1" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.env.local" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/56adbb53-fd44-42d9-b3f4-0a45798b14db/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/Entity/Topic.php" />
+        <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
+        <option value="e7179499-b484-4713-9c25-24fd3551e70d/schema/places/table/place_topic.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e7179499-b484-4713-9c25-24fd3551e70d/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8ffdaa83-a810-45b7-b701-dca7f30e8aa3/console.sql" />
+        <option value="$PROJECT_DIR$/demo/demo1/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/demo/demo1/tsconfig.json" />
+        <option value="$PROJECT_DIR$/demo/demo1/tsconfig.app.json" />
+        <option value="$PROJECT_DIR$/demo/demo1/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/demo/demo1/src/index.html" />
+        <option value="$PROJECT_DIR$/demo/demo1/package.json" />
+        <option value="$PROJECT_DIR$/demo/demo1/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/demo/demo1/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/demo/demo1/src/app/api-platform-part2/api-platform-part2.component.html" />
+        <option value="$PROJECT_DIR$/demo/demo1/src/app/services/place.service.ts" />
+        <option value="$PROJECT_DIR$/demo/demo1/src/app/api-platform-part2/api-platform-part2.component.ts" />
+        <option value="$PROJECT_DIR$/src/ApiPlatform/Filter/GeolocalizedFilter.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Place.php" />
+        <option value="$PROJECT_DIR$/config/packages/api_platform.yaml" />
+        <option value="$PROJECT_DIR$/demo/demo2/index.php" />
+        <option value="$PROJECT_DIR$/demo/demo2/create.php" />
+        <option value="$PROJECT_DIR$/demo/demo2/.gitignore" />
+        <option value="$PROJECT_DIR$/place.sql" />
+        <option value="1e83bc62-13a0-4c16-aeae-b143d100d160/schema/places/table/place.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1e83bc62-13a0-4c16-aeae-b143d100d160/console_1.sql" />
+      </list>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/demo/demo1/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/beberlei/doctrineextensions" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo/demo2" />
+      <recent name="$PROJECT_DIR$/demo/demo1/src/app" />
+      <recent name="$PROJECT_DIR$/demo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48ca7ba2-dbd5-4793-b56c-5e4470c34a63" name="Default Changelist" comment="" />
+      <created>1625337055980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625337055980</updated>
+      <workItem from="1625337059245" duration="872000" />
+      <workItem from="1625388189415" duration="2965000" />
+      <workItem from="1625395315923" duration="10887000" />
+      <workItem from="1625427995220" duration="10962000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25686000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28594506" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" weight="0.329927" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" weight="0.40936556" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.36934307" />
+      <window_info anchor="bottom" id="Database Console" order="12" visible="true" weight="0.10725076" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.17770597" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb39a93c-841b-45ab-9973-a309f728bf63/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e228626-3eb8-47f4-9f7f-6fc3426f89c9/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/df0d672c-d722-4bf6-9f3e-92e2a6ebb306/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://8e228626-3eb8-47f4-9f7f-6fc3426f89c9/schema/di-place/table/place">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8ffdaa83-a810-45b7-b701-dca7f30e8aa3/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1e83bc62-13a0-4c16-aeae-b143d100d160/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://1e83bc62-13a0-4c16-aeae-b143d100d160/schema/places/table/topic">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/80a6bcd1-9f49-402b-b5db-8d32694e7a36/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://1e83bc62-13a0-4c16-aeae-b143d100d160/schema/places/table/place_topic">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ghaliano/di-place/api/frontend/src/app/api-platform-part2/api-platform-part2.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-771">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ghaliano/di-place/api/frontend/src/app/services/place.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/src/app/api-platform-part2/api-platform-part2.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-817">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/src/app/api-platform-part2/api-platform-part2.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1578" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/src/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/frontend/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/tsconfig.app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://80a6bcd1-9f49-402b-b5db-8d32694e7a36/schema/di-place/table/place">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/app/api-platform-part2/api-platform-part2.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../piximate-master-branch/src/app/Services/base.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="50" column="12" lean-forward="true" selection-start-line="47" selection-end-line="59" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/app/api-platform-part2/api-platform-part2.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/app/services/place.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ApiPlatform/Filter/GeolocalizedFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="e#122#185#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/src/app/api-platform-part2/api-platform-part2.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/api_platform.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Place.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="83" column="66" selection-start-line="83" selection-start-column="66" selection-end-line="83" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo2/update.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo2/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo2/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo2/detail.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo2/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo1/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/Version20210705050026.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://1e83bc62-13a0-4c16-aeae-b143d100d160/schema/places/table/place.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1e83bc62-13a0-4c16-aeae-b143d100d160/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1e83bc62-13a0-4c16-aeae-b143d100d160/schema/places/table/place">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/place.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
