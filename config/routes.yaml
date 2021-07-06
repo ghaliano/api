@@ -1,3 +1,4 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+#api/config/routes.yaml
+swagger_ui:
+    path: /docs
+    controller: api_platform.swagger.action.ui
