@@ -12,6 +12,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use App\ApiPlatform\Filter\GeolocalizedFilter;
+use App\Controller\PublishController;
 
 /**
  * @ORM\Entity(repositoryClass=PlaceRepository::class)
@@ -26,7 +27,15 @@ use App\ApiPlatform\Filter\GeolocalizedFilter;
  *     },
  *  itemOperations={
  *     "get"={"normalization_context"={"groups"={"read:place:collection","read:place:item"}}},
- *     "get"={"normalization_context"={"groups"={"read:place:collection","read:place:item"}}}
+ *     "publish"={
+ *          "method"="POST",
+ *          "path"="/places/{id}/publish",
+ *          "controller"="App\Controller\PublishController",
+ *          "openapi_context"={
+ *            "summary"="Publier un endroit",
+ *            "requestBody"={}
+ *          }
+ *     }
  *     },
  * )
  * @ApiFilter(SearchFilter::class, properties={"id"="exact", "name"="partial"})
@@ -84,6 +93,11 @@ class Place
      * @Groups({"read:place:collection", "post:place:collection"})
      */
     private $picture;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $isEnabled;
 
     public function __construct()
     {
@@ -187,6 +201,18 @@ class Place
     public function setPicture(?string $picture): self
     {
         $this->picture = $picture;
+
+        return $this;
+    }
+
+    public function getIsEnabled(): ?bool
+    {
+        return $this->isEnabled;
+    }
+
+    public function setIsEnabled(?bool $isEnabled): self
+    {
+        $this->isEnabled = $isEnabled;
 
         return $this;
     }
