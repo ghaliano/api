@@ -48,7 +48,7 @@ class Place implements UserOwnedInterface
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"read:place:collection"})
+     * @Groups({"read:user"})
      */
     private $id;
 
