@@ -41,9 +41,15 @@ class User implements UserInterface
      */
     private $places;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Place::class, mappedBy="user")
+     */
+    private $no;
+
     public function __construct()
     {
         $this->places = new ArrayCollection();
+        $this->no = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -151,6 +157,36 @@ class User implements UserInterface
             // set the owning side to null (unless already changed)
             if ($place->getUser() === $this) {
                 $place->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Place[]
+     */
+    public function getNo(): Collection
+    {
+        return $this->no;
+    }
+
+    public function addNo(Place $no): self
+    {
+        if (!$this->no->contains($no)) {
+            $this->no[] = $no;
+            $no->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeNo(Place $no): self
+    {
+        if ($this->no->removeElement($no)) {
+            // set the owning side to null (unless already changed)
+            if ($no->getUser() === $this) {
+                $no->setUser(null);
             }
         }
 

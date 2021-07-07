@@ -1074,206 +1074,200 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="283" parent="38" name="article">
-      <Collation>utf8mb4_unicode_ci</Collation>
-    </table>
-    <table id="284" parent="38" name="doctrine_migration_versions">
+    <table id="283" parent="38" name="doctrine_migration_versions">
       <Collation>utf8_unicode_ci</Collation>
     </table>
-    <table id="285" parent="38" name="place">
+    <table id="284" parent="38" name="place">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="286" parent="38" name="place_topic">
+    <table id="285" parent="38" name="place_topic">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="287" parent="38" name="topic">
+    <table id="286" parent="38" name="topic">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="288" parent="38" name="user">
+    <table id="287" parent="38" name="user">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <column id="289" parent="283" name="id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="290" parent="283" name="name">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="291" parent="283" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="292" parent="284" name="version">
+    <column id="288" parent="283" name="version">
       <Position>1</Position>
       <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="284" name="executed_at">
+    <column id="289" parent="283" name="executed_at">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="284" name="execution_time">
+    <column id="290" parent="283" name="execution_time">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="295" parent="284" name="PRIMARY">
+    <key id="291" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="296" parent="285" name="id">
+    <column id="292" parent="284" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="285" name="name">
+    <column id="293" parent="284" name="user_id">
       <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="294" parent="284" name="name">
+      <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="285" name="description">
-      <Position>3</Position>
+    <column id="295" parent="284" name="description">
+      <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="285" name="longitude">
-      <Position>4</Position>
-      <DataType>double|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="300" parent="285" name="latitude">
+    <column id="296" parent="284" name="longitude">
       <Position>5</Position>
       <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="285" name="created_at">
+    <column id="297" parent="284" name="latitude">
       <Position>6</Position>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="298" parent="284" name="created_at">
+      <Position>7</Position>
       <Comment>(DC2Type:datetime_immutable)</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="285" name="picture">
-      <Position>7</Position>
+    <column id="299" parent="284" name="picture">
+      <Position>8</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="285" name="is_enabled">
-      <Position>8</Position>
+    <column id="300" parent="284" name="is_enabled">
+      <Position>9</Position>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="304" parent="285" name="PRIMARY">
+    <index id="301" parent="284" name="IDX_741D53CDA76ED395">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="302" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="305" parent="286" name="place_id">
+    <foreign-key id="303" parent="284" name="FK_741D53CDA76ED395">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>places-master</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="304" parent="285" name="place_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="306" parent="286" name="topic_id">
+    <column id="305" parent="285" name="topic_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="307" parent="286" name="IDX_3436C538DA6A219">
+    <index id="306" parent="285" name="IDX_3436C538DA6A219">
       <ColNames>place_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="308" parent="286" name="IDX_3436C5381F55203D">
+    <index id="307" parent="285" name="IDX_3436C5381F55203D">
       <ColNames>topic_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="309" parent="286" name="PRIMARY">
+    <key id="308" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>place_id
 topic_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="310" parent="286" name="FK_3436C538DA6A219">
+    <foreign-key id="309" parent="285" name="FK_3436C538DA6A219">
       <ColNames>place_id</ColNames>
       <RefSchemaName>places-master</RefSchemaName>
       <RefTableName>place</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="311" parent="286" name="FK_3436C5381F55203D">
+    <foreign-key id="310" parent="285" name="FK_3436C5381F55203D">
       <ColNames>topic_id</ColNames>
       <RefSchemaName>places-master</RefSchemaName>
       <RefTableName>topic</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="312" parent="287" name="id">
+    <column id="311" parent="286" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="287" name="name">
+    <column id="312" parent="286" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="314" parent="287" name="PRIMARY">
+    <key id="313" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="315" parent="288" name="id">
+    <column id="314" parent="287" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="288" name="email">
+    <column id="315" parent="287" name="email">
       <Position>2</Position>
       <DataType>varchar(180)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="288" name="roles">
+    <column id="316" parent="287" name="roles">
       <Position>3</Position>
       <DataType>json|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="288" name="password">
+    <column id="317" parent="287" name="password">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="319" parent="288" name="UNIQ_8D93D649E7927C74">
+    <index id="318" parent="287" name="UNIQ_8D93D649E7927C74">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="320" parent="288" name="PRIMARY">
+    <key id="319" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="321" parent="288" name="UNIQ_8D93D649E7927C74">
+    <key id="320" parent="287" name="UNIQ_8D93D649E7927C74">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>UNIQ_8D93D649E7927C74</UnderlyingIndexName>
     </key>

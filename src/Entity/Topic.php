@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Contract\UserOwnedInterface;
 use App\Repository\TopicRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -36,6 +37,11 @@ class Topic
      * @ORM\ManyToMany(targetEntity=Place::class, mappedBy="topics")
      */
     private $places;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="no")
+     */
+    private $user;
 
     public function __construct()
     {
@@ -82,6 +88,19 @@ class Topic
         if ($this->places->removeElement($place)) {
             $place->removeTopic($this);
         }
+
+        return $this;
+    }
+
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

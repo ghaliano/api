@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: mac
  * Date: 2021-07-07
- * Time: 07:50
+ * Time: 11:52
  */
 
 namespace App\Serializer;
@@ -20,26 +20,31 @@ use Symfony\Component\Serializer\Exception\RuntimeException;
 use Symfony\Component\Serializer\Exception\UnexpectedValueException;
 use Symfony\Component\Serializer\Normalizer\ContextAwareDenormalizerInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
-use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
 class UserOwnedDenormalizer implements ContextAwareDenormalizerInterface, DenormalizerAwareInterface
 {
-    use DenormalizerAwareTrait;
+    private $denormalizer;
+    private $security;
     private $alreadyCalled;
 
     public function __construct(Security $security)
     {
         $this->security = $security;
-        $this->alreadyCalled = uniqid();
+        $this->alreadyCalled = "UserOwnedDenormalizer".uniqid();
     }
 
     public function supportsDenormalization($data, $type, $format = null, array $context = [])
     {
-        $reflectionClass = new \ReflectionClass($type);
-        $alreadyCalled = $context[$this->alreadyCalled] ?? false;
+        $reflection = new \ReflectionClass($type);
 
-        return $reflectionClass->implementsInterface(UserOwnedInterface::class) && !$alreadyCalled;
+        return $reflection->implementsInterface(UserOwnedInterface::class)
+            && !isset($context[$this->alreadyCalled]);
+    }
+
+    public function setDenormalizer(DenormalizerInterface $denormalizer)
+    {
+        $this->denormalizer = $denormalizer;
     }
 
     public function denormalize($data, $type, $format = null, array $context = [])
@@ -49,12 +54,6 @@ class UserOwnedDenormalizer implements ContextAwareDenormalizerInterface, Denorm
         $obj->setUser($this->security->getUser());
 
         return $obj;
-
-    }
-
-    public function setDenormalizer(DenormalizerInterface $denormalizer)
-    {
-        $this->denormalizer = $denormalizer;
     }
 
 }

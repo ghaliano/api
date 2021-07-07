@@ -13,6 +13,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use App\ApiPlatform\Filter\GeolocalizedFilter;
+//use App\ApiPlatform\Filter\UserOwnedFilter;
 
 /**
  * @ORM\Entity(repositoryClass=PlaceRepository::class)
@@ -100,7 +101,7 @@ class Place implements UserOwnedInterface
     private $isEnabled;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="places")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="no")
      */
     private $user;
 
