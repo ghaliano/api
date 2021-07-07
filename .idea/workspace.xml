@@ -125,7 +125,6 @@
       <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/client/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ghaliano/di-place/docker/dev-tls/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../ghaliano/di-place/docker/dev-tls/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Place.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Place.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -169,46 +168,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Serializer/PlaceApiSerializer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="33" column="101" selection-start-line="33" selection-start-column="101" selection-end-line="33" selection-end-column="101" />
-              <folding>
-                <element signature="e#115#163#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Serializer/UserOwnedDenormalizer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-              <folding>
-                <element signature="e#115#151#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/services.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="32" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Place.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="71" />
+            <state relative-caret-position="370">
+              <caret line="29" column="80" lean-forward="true" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
               <folding>
                 <element signature="e#30#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/PlacePictureUpload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+              <folding>
+                <element signature="e#115#136#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -232,7 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo/demo1/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/demo/demo1/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/demo/demo1/src/app/api-platform-part2/api-platform-part2.component.html" />
         <option value="$PROJECT_DIR$/demo/demo1/src/app/services/place.service.ts" />
@@ -280,9 +257,10 @@
         <option value="$PROJECT_DIR$/demo/config.php" />
         <option value="$PROJECT_DIR$/demo/create-place.php" />
         <option value="$PROJECT_DIR$/src/Serializer/UserOwnedDenormalizer.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Place.php" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/src/Serializer/PlaceApiSerializer.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Place.php" />
+        <option value="$PROJECT_DIR$/src/Controller/PlacePictureUpload.php" />
       </list>
     </option>
   </component>
@@ -406,18 +384,7 @@
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Serializer" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -480,11 +447,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70998000" />
+    <option name="totallyTimeSpent" value="71236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21324718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -505,7 +471,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.11712439" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.11470113" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21324718" />
@@ -652,16 +618,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/34d694f1-caf8-40a1-81fa-f86b74d516a2/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Contract/UserOwnedInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding>
-            <element signature="e#113#134#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/PlaceRepository.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -903,8 +859,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Place.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="71" />
+        <state relative-caret-position="370">
+          <caret line="29" column="80" lean-forward="true" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
           <folding>
             <element signature="e#30#72#0#PHP" expanded="true" />
           </folding>
@@ -927,6 +883,16 @@
           <caret line="33" column="101" selection-start-line="33" selection-start-column="101" selection-end-line="33" selection-end-column="101" />
           <folding>
             <element signature="e#115#163#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PlacePictureUpload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="e#115#136#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

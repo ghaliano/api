@@ -27,6 +27,7 @@ use App\ApiPlatform\Filter\GeolocalizedFilter;
  *     }
  *     },
  *  itemOperations={
+ *     "picture"={"method"="post","path"="/places/{id}/pictures","controlleur"=""}
  *     "get"={"normalization_context"={"groups"={"read:place:collection","read:place:item"}}},
  *     "publish"={
  *          "method"="POST",
