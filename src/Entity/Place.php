@@ -14,6 +14,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use App\ApiPlatform\Filter\GeolocalizedFilter;
 //use App\ApiPlatform\Filter\UserOwnedFilter;
+use App\Controller\PlacePictureController;
 
 /**
  * @ORM\Entity(repositoryClass=PlaceRepository::class)
@@ -27,6 +28,7 @@ use App\ApiPlatform\Filter\GeolocalizedFilter;
  *     }
  *     },
  *  itemOperations={
+ *     "picture"= {"method"="POST", "desirialize"=false, "path"="/places/{id}/picture", "controller"="PlacePictureController::class"},
  *     "get"={"normalization_context"={"groups"={"read:place:collection","read:place:item"}}},
  *     "publish"={
  *          "method"="POST",
