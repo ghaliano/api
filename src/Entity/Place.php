@@ -4,15 +4,19 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
+use App\ApiPlatform\Filter\GeolocalizedFilter;
+use App\Contract\UploadApiInterface;
 use App\Contract\UserOwnedInterface;
 use App\Repository\PlaceRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
-use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
-use App\ApiPlatform\Filter\GeolocalizedFilter;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+
 //use App\ApiPlatform\Filter\UserOwnedFilter;
 
 /**
@@ -27,7 +31,13 @@ use App\ApiPlatform\Filter\GeolocalizedFilter;
  *     }
  *     },
  *  itemOperations={
- *     "picture"={"method"="post","path"="/places/{id}/pictures","controlleur"=""}
+ *     "post"={},
+ *     "put"={},
+ *     "picture"={
+ *         "method"="post","path"="/places/{id}/pictures",
+ *         "controller"="App\Controller\UploadController",
+ *         "deserialize"=false
+ *     },
  *     "get"={"normalization_context"={"groups"={"read:place:collection","read:place:item"}}},
  *     "publish"={
  *          "method"="POST",
@@ -42,8 +52,9 @@ use App\ApiPlatform\Filter\GeolocalizedFilter;
  * )
  * @ApiFilter(SearchFilter::class, properties={"id"="exact", "name"="partial"})
  * @ApiFilter(GeolocalizedFilter::class)
+ * @Vich\Uploadable
  */
-class Place implements UserOwnedInterface
+class Place implements UserOwnedInterface, UploadApiInterface
 {
     /**
      * @ORM\Id
@@ -97,6 +108,12 @@ class Place implements UserOwnedInterface
     private $picture;
 
     /**
+     * @Vich\UploadableField(mapping="place_pictures", fileNameProperty="picture")
+     * @var File
+     */
+    private $pictureFile;
+
+    /**
      * @ORM\Column(type="boolean", nullable=true)
      */
     private $isEnabled;
@@ -105,6 +122,12 @@ class Place implements UserOwnedInterface
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="no")
      */
     private $user;
+
+    /**
+     * @ORM\Column(type="datetime")
+     * @var \DateTime
+     */
+    private $updatedAt;
 
     public function __construct()
     {
@@ -234,5 +257,23 @@ class Place implements UserOwnedInterface
         $this->user = $user;
 
         return $this;
+    }
+
+    public function setPictureFile(File $picture = null)
+    {
+        $this->pictureFile = $picture;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($picture) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
+    public function getPictureFile()
+    {
+        return $this->pictureFile;
     }
 }

@@ -8,7 +8,7 @@ use Symfony\Component\Mime\Part\Multipart\FormDataPart;
 
 $data = [
     "name" => "Name l'ors 'un upload de fichier",
-    "file" => DataPart::fromPath("/Users/mac/Documents/dev/sofrecom/api/demo/logo.jpeg")
+    "file" => DataPart::fromPath("/Users/mac/Documents/dev/sofrecom/api/demo/lanetscouade.png")
 ];
 
 $formData = new FormDataPart($data);

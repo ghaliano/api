@@ -30,7 +30,7 @@ class PlaceApiSerializer implements SerializerContextBuilderInterface
     {
         $context = $this->decorated->createFromRequest($request, $normalization, $extractedAttributes);
         $ressourceClass = $context['resource_class'] ?? null;
-        $context['groups'] = is_array($context['groups'])?$context['groups']:["read:place:collection"];
+        $context['groups'] = isset($context['groups']) && is_array($context['groups'])?$context['groups']:["read:place:collection"];
 
         if ($ressourceClass === Place::class
             && isset($context['groups'])

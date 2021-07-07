@@ -1,0 +1,9 @@
+parameters:
+  app.path.place_pictures: /uploads/places
+
+vich_uploader:
+  db_driver: orm
+  mappings:
+    place_pictures:
+      uri_prefix:         '%app.path.place_pictures%'
+      upload_destination: '%kernel.project_dir%/public%app.path.place_pictures%'
