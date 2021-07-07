@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Contract\UserOwnedInterface;
 use App\Repository\PlaceRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -12,7 +13,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use App\ApiPlatform\Filter\GeolocalizedFilter;
-use App\Controller\PublishController;
 
 /**
  * @ORM\Entity(repositoryClass=PlaceRepository::class)
@@ -41,7 +41,7 @@ use App\Controller\PublishController;
  * @ApiFilter(SearchFilter::class, properties={"id"="exact", "name"="partial"})
  * @ApiFilter(GeolocalizedFilter::class)
  */
-class Place
+class Place implements UserOwnedInterface
 {
     /**
      * @ORM\Id
@@ -98,6 +98,11 @@ class Place
      * @ORM\Column(type="boolean", nullable=true)
      */
     private $isEnabled;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="places")
+     */
+    private $user;
 
     public function __construct()
     {
@@ -213,6 +218,18 @@ class Place
     public function setIsEnabled(?bool $isEnabled): self
     {
         $this->isEnabled = $isEnabled;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

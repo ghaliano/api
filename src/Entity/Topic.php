@@ -13,7 +13,6 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ORM\Entity(repositoryClass=TopicRepository::class)
  * @ApiResource(
- *     collectionOperations={"get"}
  * )
  */
 class Topic
